@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Gauss Jordan</title>
+    <link rel="stylesheet" href="styles_gauss_seidel.css">
+</head>
+<body>
+    <div class="seidel-container">
+        <button class="inicio" onclick="window.location.href='index.html'">Inicio</button>
+        <h1>Método <span class="title-highlight">Gauss Jordan</span></h1>
+
+        <div class="equations-form">
+            <div class="equation-row">
+                <input type="number" id="a11" placeholder="a11"> x 
+                <input type="number" id="a12" placeholder="a12"> y 
+                <input type="number" id="a13" placeholder="a13"> z = 
+                <input type="number" id="b1" placeholder="b1">
+            </div>
+            <div class="equation-row">
+                <input type="number" id="a21" placeholder="a21"> x 
+                <input type="number" id="a22" placeholder="a22"> y 
+                <input type="number" id="a23" placeholder="a23"> z = 
+                <input type="number" id="b2" placeholder="b2">
+            </div>
+            <div class="equation-row">
+                <input type="number" id="a31" placeholder="a31"> x 
+                <input type="number" id="a32" placeholder="a32"> y 
+                <input type="number" id="a33" placeholder="a33"> z = 
+                <input type="number" id="b3" placeholder="b3">
+            </div>
+        </div>
+        <div class="error-message" style="color:red;"></div>
+        <button class="calcular" onclick="calcularGaussJordan()">Calcular</button>
+
+        <div class="resultados-container">
+
+            <div id="matrizResultante" class="resultados-finales">
+                <!-- Aquí se agregarán dinámicamente la matriz final -->
+            </div>
+
+            <div id="resultado" class="resultados-finales">
+                <!-- Aquí se agregarán dinámicamente los resultados finales -->
+            </div>
+            <div id="matrizPaso" class="resultados-finales">
+                <!-- Aquí se agregarán dinámicamente las matrices intermedias -->
+            </div>
+            
+        </div>
+        
+
+        <img src="imagenes/snoppys.png" alt="snop" class="star left">
+        <img src="imagenes/snoppys.png" alt="snop" class="star right">
+    </div>
+
+    <script src="gauss_jordan.js"></script>
+</body>
+</html>
+

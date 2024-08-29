@@ -1,0 +1,183 @@
+
+
+body {
+    background-color: #f5deb3;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.seidel-container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    background-color: #ffebcd;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inicio {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #f4a460;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 40px;
+    color: #8b4513;
+}
+
+.title-highlight {
+    text-decoration: underline;
+}
+
+.resultados-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resultados-finales,
+.iteraciones {
+    
+    background-color: #d2b48c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    color: #8b4513;
+    line-height: 1.6em;
+    overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es más ancha que el contenedor */
+    width: 100%; /* Asegura que la tabla ocupe el 100% del ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+
+}
+
+.resultados-finales h2,
+.iteraciones h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.iteracion-item {
+    margin-bottom: 15px;
+}
+
+.star {
+    position: absolute;
+    width: 100px;
+}
+
+.star.left {
+    top: 100px;
+    left: -60px;
+}
+
+.star.right {
+    bottom: 30px;
+    right: -60px;
+}
+
+.calcular {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #8b4513;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calcular:hover {
+    background-color: #a0522d;
+}
+
+.equations-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.equation-row {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.equation-row input {
+    width: 50px;
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/*--resto*/
+/* Resto del CSS */
+
+.star {
+    position: absolute;
+    width: 150px; /* Tamaño más grande */
+    height: auto;
+}
+
+.star.left {
+    top: 100px;
+    left: -75px; /* Más centrado */
+}
+
+.star.right {
+    bottom: 30px;
+    right: -75px; /* Más centrado */
+}
+
+/* Nuevas estrellas centradas */
+.star.center-left {
+    top: 50%;
+    left: -75px;
+    transform: translateY(-50%);
+}
+
+.star.center-right {
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+}
+
+/* Modificación para subrayar "Iteración n" */
+.iteracion-item p.iteracion-title {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2em; /* Aumentar un poco el tamaño de la fuente */
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5deb3;
+}
