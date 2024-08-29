@@ -77,7 +77,7 @@ function GaussJordan(matriz, b) {
         }
             // Verificar si la fila es 0
         if (matriz[k][k] == 0) {
-            return 'No tiene solución';
+            return 'No tiene solución y/o tiene soluciones infinitas';
         } else {
 
                 //Realizar operaciones de fila para eliminar la variable
